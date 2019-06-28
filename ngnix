@@ -1,0 +1,8 @@
+server {
+  listen 80;
+  server_name ec2-3-95-230-16.compute-1.amazonaws.com;
+
+  location / {
+    proxy_pass http://10.100.12.4:8080/studentapp-2.5-SNAPSHOT/;
+  }
+}
